@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de vehículo IoT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="container text-center mt-5">
+        <h1>Control de vehículo IoT</h1>
+
+        <div class="row mt-5">
+            <div class="col">
+                <button class="btn btn-magenta" onclick="sendCommand('V_ADE_IZQ')">VUELTA ADE IZQUIERDA</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-green" onclick="sendCommand('ADELANTE')">AVANZAR</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-magenta" onclick="sendCommand('V_ADE_DER')">VUELTA ADE DERECHA</button>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col">
+                <button class="btn btn-brown" onclick="sendCommand('G_360_IZQ')">GIRO 360° IZQUIERDA</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-yellow" onclick="sendCommand('G_90_IZQ')">GIRO 90° IZQUIERDA</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-red" onclick="sendCommand('DETENER')">DETENER</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-yellow" onclick="sendCommand('G_90_DER')">GIRO 90° DERECHA</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-brown" onclick="sendCommand('G_360_DER')">GIRO 360° DERECHA</button>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col">
+                <button class="btn btn-blue" onclick="sendCommand('V_ATR_IZQ')">VUELTA ATRAS IZQUIERDA</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-orange" onclick="sendCommand('ATRAS')">RETROCEDER</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-blue" onclick="sendCommand('V_ATR_DER')">VUELTA ATRAS DERECHA</button>
+            </div>
+        </div>
+
+        <div class="mt-5">
+            <h5>Movimiento</h5>
+            <h2 id="movement" class="text-primary">Esperando orden...</h2>
+        </div>
+    </div>
+
+    <footer class="text-center mt-5 p-3 bg-dark text-white">
+        Desarrollador por Alef David Esparza Diaz
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
