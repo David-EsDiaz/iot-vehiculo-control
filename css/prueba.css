@@ -1,0 +1,65 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+font-family: sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px
+
+}
+.movimientos{
+
+}
+
+button{
+    font-size: 1rem;
+    padding: 30px;
+    margin: 10px;
+    margin-left: 40px;
+    border-radius: 1em;
+    border: none;
+}
+.btn__blue{
+    background-color: rgb(73, 73, 190);
+    color: white;
+}
+.btn__orange{
+    background-color: orange;
+}
+.btn__purple{
+    background-color: purple;
+    color: white;
+}
+.btn__avanzar{
+    background-color: green;
+    color: white;
+}
+.btn__detener{
+    background-color: red;
+}
+.btn__atras{
+    background-color: yellow;
+}
+.movement-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
