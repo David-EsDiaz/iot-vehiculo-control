@@ -1,0 +1,86 @@
+/* Layout general */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .container {
+    padding: 40px 20px;
+    text-align: center;
+    flex: 1;
+  }
+  
+  .button-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px 0;
+  }
+  
+  .btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+    min-width: 180px;
+  }
+  
+  /* Colores personalizados */
+  .btn-magenta {
+    background-color: #c2185b;
+    color: white;
+  }
+  .btn-green {
+    background-color: #00695c;
+    color: white;
+  }
+  .btn-brown {
+    background-color: #8d6e63;
+    color: white;
+  }
+  .btn-yellow {
+    background-color: #fbc02d;
+    color: black;
+  }
+  .btn-red {
+    background-color: #e53935;
+    color: white;
+  }
+  .btn-blue {
+    background-color: #5c6bc0;
+    color: white;
+  }
+  .btn-orange {
+    background-color: #fb8c00;
+    color: white;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  
+  .movement-box {
+    margin-top: 50px;
+  }
+  
+  .text-primary {
+    
+    color: #007bff;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #222;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+  }
+  
